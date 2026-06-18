@@ -12,7 +12,9 @@ for attempt in range(1, max_attempts + 1):
     if guess == answer:
         print("正解")
         break
+    elif guess < answer:
+        print("不正解です。もっと大きい数字です")
     else:
-        print("不正解")
+        print("不正解です。もっと小さい数字です")
 else:
     print(f"正解は{answer}でした")
